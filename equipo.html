@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo</title>
+
+    <!-- Enlace a Bootstrap CDN para estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Estilos personalizados */
+        body {
+            background-color: #fff; /* Fondo blanco para el contenido */
+            color: #333; /* Color de texto predeterminado */
+        }
+
+        /* Menú */
+        nav {
+            background-color: #58B2AF;
+        }
+
+        .navbar-nav {
+            text-align: left;
+        }
+
+        .navbar-nav a {
+            color: #fff; /* Color de texto en el menú */
+        }
+
+        /* Cards del equipo */
+        .card {
+            width: 300px; /* Tamaño de las cards */
+            margin: 20px;
+            border-radius: 15px; /* Bordes redondeados */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Efecto sombra */
+        }
+
+        .card img {
+            border-radius: 50%; /* Imagen circular */
+            width: 150px; /* Tamaño de la imagen */
+            height: 150px; /* Tamaño de la imagen */
+            margin: 20px auto; /* Centrar la imagen */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menú de navegación (igual que en la página de inicio) -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="equipo.html">Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="noticias.html">Noticias</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Cards del equipo -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/foto1.jpg" alt="Foto del miembro 1">
+                <div class="card-body">
+                    <h5 class="card-title">Nombre del Miembro 1</h5>
+                    <p class="card-text">Descripción del perfil del miembro 1.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/foto2.jpg" alt="Foto del miembro 2">
+                <div class="card-body">
+                    <h5 class="card-title">Nombre del Miembro 2</h5>
+                    <p class="card-text">Descripción del perfil del miembro 2.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/foto3.jpg" alt="Foto del miembro 3">
+                <div class="card-body">
+                    <h5 class="card-title">Nombre del Miembro 3</h5>
+                    <p class="card-text">Descripción del perfil del miembro 3.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/foto4.jpg" alt="Foto del miembro 4">
+                <div class="card-body">
+                    <h5 class="card-title">Nombre del Miembro 4</h5>
+                    <p class="card-text">Descripción del perfil del miembro 4.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="images/foto5.jpg" alt="Foto del miembro 5">
+                <div class="card-body">
+                    <h5 class="card-title">Nombre del Miembro 5</h5>
+                    <p class="card-text">Descripción del perfil del miembro 5.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Enlace a Bootstrap JavaScript CDN (Necesario para Bootstrap) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

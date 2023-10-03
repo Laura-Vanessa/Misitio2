@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+
+    <!-- Enlace a Bootstrap CDN para estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Estilos personalizados */
+        body {
+            background-color: #fff; /* Fondo blanco para el contenido */
+            color: #333; /* Color de texto predeterminado */
+        }
+
+        .jumbotron {
+            background: url('https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .jumbotron h1 {
+            background-color: rgba(88, 178, 175, 0.7); /* Fondo semitransparente para el texto */
+            color: #fff; /* Color de texto en el jumbotron */
+            padding: 20px;
+        }
+
+        /* Menú */
+        nav {
+            background-color: #58B2AF;
+        }
+
+        .navbar-nav {
+            text-align: left;
+        }
+
+        .navbar-nav a {
+            color: #fff; /* Color de texto en el menú */
+        }
+
+        /* Contenido principal */
+        .main-content {
+            padding: 20px;
+        }
+
+        /* Marca de agua en la imagen del jumbotron */
+        .jumbotron::before {
+            content: "";
+            background: url('https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg');
+            opacity: 0.2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menú de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="equipo.html">Equipo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="noticias.html">Noticias</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Jumbotron -->
+<div class="jumbotron">
+    <h1>Bienvenido a Nuestro Proyecto</h1>
+</div>
+
+<!-- Contenido principal -->
+<div class="container main-content">
+    <h2>Nuestro Proyecto</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in turpis non ante sollicitudin eleifend.</p>
+    <p>Curabitur nec sem eu ipsum tincidunt condimentum vel non ex. Fusce ac odio vitae ex hendrerit facilisis.</p>
+    <p>Integer ut libero vel turpis bibendum lacinia nec a nunc. Sed eget justo vel arcu cursus ultricies.</p>
+    
+    <!-- Video de YouTube -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/K5pkkuiyRzk" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<!-- Enlace a Bootstrap JavaScript CDN (Necesario para Bootstrap) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
